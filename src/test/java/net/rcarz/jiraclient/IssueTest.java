@@ -39,6 +39,7 @@ public class IssueTest {
         String iconURL = "https://brainbubble.atlassian.net/images/icons/statuses/open.png";
 
         Issue issue = new Issue(null, Utils.getTestIssue());
+    
         assertNotNull(issue.getStatus());
         assertEquals(description, issue.getStatus().getDescription());
         assertEquals(iconURL, issue.getStatus().getIconUrl());

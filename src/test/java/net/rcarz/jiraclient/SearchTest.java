@@ -14,7 +14,7 @@ public class SearchTest {
 
   @Test
   public void testSimpleSearch() throws JiraException {
-    JiraClient jira = new JiraClient("https://jira.atlassian.com/", null);
+    JiraClient jira = new JiraClient("http://172.19.0.231:8080/login.jsp", null);
 
     String key = "JRA-1";
     Issue.SearchResult searchResult = jira.searchIssues("key = " + key);
